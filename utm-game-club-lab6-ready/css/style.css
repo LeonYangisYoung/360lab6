@@ -1,0 +1,23 @@
+/* Simple UTM Game Club theme */
+:root { --bs-primary: #6847a5; --bs-primary-rgb: 104,71,165; }
+.btn-solid.theme-primary { background:#6847a5; color:white; border:0; padding:.65rem 1rem; border-radius:7px; }
+body { color:#282536; }
+.intro,.contact-page { padding:3rem 0 2rem; }
+.carousel { margin:1rem 0 3rem; }
+.slide { display:none; }
+.slide.active { display:block; }
+.slide img { width:100%; height:330px; object-fit:cover; border-radius:10px; }
+.carousel-controls { display:flex; justify-content:space-between; margin-top:.5rem; }
+.card img { width:100%; height:180px; object-fit:cover; }
+.card-body { padding:1rem; }
+.card button { margin-top:1rem; }
+section#games { padding-bottom:3rem; }
+.drawer { display:none; }
+.drawer.open { display:flex; gap:1.5rem; align-items:center; }
+.drawer a { color:inherit; }
+dialog { border:0; border-radius:10px; padding:1.5rem; box-shadow:0 8px 30px #0004; }
+dialog::backdrop { background:#0008; }
+.form-field label { display:block; margin-bottom:.4rem; }
+.form-control { width:100%; padding:.6rem; border:1px solid #aaa; border-radius:6px; }
+footer { padding:2rem 0; color:#666; }
+@media(max-width:700px) { .drawer.open { position:absolute; z-index:5; top:0; right:0; background:white; padding:2rem; flex-direction:column; align-items:flex-start; box-shadow:0 5px 20px #0003; } .slide img { height:230px; } }
